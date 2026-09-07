@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NasPilot 隐私政策 · Privacy Policy</title>
+<style>
+:root{--bg:#f7f9f8;--fg:#1c2622;--muted:#5b6a63;--accent:#2e8b57;--border:#dfe6e2}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+h1{font-size:28px;margin:0 0 4px}h2{font-size:20px;margin:36px 0 10px}h3{font-size:16px;margin:24px 0 6px}
+.meta{color:var(--muted);font-size:14px;margin-bottom:28px}
+a{color:var(--accent)}hr{border:0;border-top:1px solid var(--border);margin:40px 0}
+ul{padding-left:22px}li{margin:4px 0}
+.nav{font-size:14px;color:var(--muted);margin-bottom:24px}.nav a{margin-right:14px}
+</style>
+</head>
+<body>
+<main>
+<div class="nav"><a href="./">NasPilot</a><a href="#zh">简体中文</a><a href="#en">English</a></div>
+
+<section id="zh">
+<h1>NasPilot 隐私政策</h1>
+<div class="meta">生效日期：2026-09-07 · 适用于 NasPilot Android 应用（包名 app.naspilot.android）</div>
+
+<h2>一句话</h2>
+<p>NasPilot 不收集、不上传、不分析你的任何个人数据。应用只和<strong>你自己配置的 Synology NAS</strong>（以及可选的、你自己部署在 NAS 上的 NasPilot 侧车）通信。开发者不运营任何服务器，看不到你的数据。</p>
+
+<h2>1. 我们收集什么</h2>
+<p><strong>什么都不收集。</strong>应用不含广告 SDK、不含统计 / 崩溃上报 SDK，不会向开发者或任何第三方发送设备信息、使用记录或文件内容。</p>
+
+<h2>2. 数据保存在哪里</h2>
+<ul>
+<li><strong>NAS 地址与会话</strong>：保存在你的手机上。登录密码不落盘，只保存登录后的会话令牌，令牌存放在系统安全存储（Android Keystore）。</li>
+<li><strong>证书指纹</strong>：你信任过的自签名证书指纹保存在本机，用于后续连接校验。</li>
+<li><strong>观看进度、最近目录、小组件配置</strong>：保存在本机。</li>
+<li><strong>缩略图缓存</strong>：来自你 NAS 的图片缩略图会缓存在本机，用于加快显示。</li>
+</ul>
+
+<h2>3. 数据传输</h2>
+<p>应用与 NAS 之间全部使用 HTTPS 加密传输。自签名证书按主机与证书指纹信任，首次连接需你手动确认。</p>
+
+<h2>4. 「问 NAS」功能（可选）</h2>
+<p>「问 NAS」需要你在自己的 NAS 上以 Docker 部署 NasPilot 侧车，并配置<strong>你自己的</strong>大模型服务账号。启用后：</p>
+<ul>
+<li>应用只与侧车通信，不直接连接任何模型服务；模型服务凭据只保存在侧车里，不在手机上。</li>
+<li>侧车默认只把<strong>文本</strong>（你的提问、文件名与路径、统计结果）发送给你配置的模型服务；原始文件永不出网。</li>
+<li>图片 / 文档 / 视频内容是否可以发送给模型服务，由你在应用的「AI 设置」里按目录逐一授权；每次发送都有记录并在对话里标明。</li>
+<li>模型服务对这些数据的处理适用该服务商自己的隐私政策。</li>
+</ul>
+<p>这条数据流由你自己搭建、自己控制，不经过开发者。</p>
+
+<h2>5. 权限说明</h2>
+<ul>
+<li><strong>网络</strong>：连接你的 NAS。</li>
+<li><strong>相机 / 相册（照片与视频）</strong>：仅在你主动选择「拍照上传」「从相册上传」时使用，用于把你选中的内容上传到你的 NAS。</li>
+<li><strong>生物识别</strong>：可选，用于本机解锁应用。</li>
+</ul>
+
+<h2>6. 删除数据</h2>
+<p>在应用内「管理 → App 设置 → 退出登录」即可清除本机保存的会话、证书指纹与缓存；卸载应用会删除全部本地数据。开发者处没有任何你的数据可供删除。</p>
+
+<h2>7. 儿童</h2>
+<p>NasPilot 面向成年 NAS 用户，不面向 13 岁以下儿童，也不收集任何人的个人信息。</p>
+
+<h2>8. 变更与联系</h2>
+<p>政策变更会更新本页并修改生效日期。问题与反馈：<a href="https://github.com/UserName-Haha/naspilot-site/issues">GitHub Issues</a>。</p>
+<p class="meta">NasPilot 是独立开发的第三方客户端，与 Synology Inc. 无隶属或授权关系。Synology、DSM 为 Synology Inc. 的商标。</p>
+</section>
+
+<hr>
+
+<section id="en">
+<h1>NasPilot Privacy Policy</h1>
+<div class="meta">Effective 2026-09-07 · Applies to the NasPilot Android app (package app.naspilot.android)</div>
+
+<h2>In one sentence</h2>
+<p>NasPilot does not collect, upload or analyze any of your personal data. The app talks only to <strong>the Synology NAS you configure</strong> (and, optionally, the NasPilot sidecar you deploy on that NAS yourself). The developer operates no servers and cannot see your data.</p>
+
+<h2>1. What we collect</h2>
+<p><strong>Nothing.</strong> The app contains no advertising SDK and no analytics or crash-reporting SDK. It never sends device information, usage data or file contents to the developer or any third party.</p>
+
+<h2>2. Where data is stored</h2>
+<ul>
+<li><strong>NAS address and session</strong>: stored on your phone. Your password is never stored; only the session token is kept, in the system secure storage (Android Keystore).</li>
+<li><strong>Certificate fingerprints</strong>: fingerprints of self-signed certificates you trusted are stored locally for later verification.</li>
+<li><strong>Playback progress, recent folders, widget settings</strong>: stored locally.</li>
+<li><strong>Thumbnail cache</strong>: thumbnails from your NAS are cached locally for faster display.</li>
+</ul>
+
+<h2>3. Data in transit</h2>
+<p>All traffic between the app and your NAS uses HTTPS. Self-signed certificates are pinned by host and fingerprint and must be confirmed by you on first connection.</p>
+
+<h2>4. "Ask NAS" (optional)</h2>
+<p>"Ask NAS" requires you to deploy the NasPilot sidecar on your own NAS via Docker and configure <strong>your own</strong> LLM provider account. When enabled:</p>
+<ul>
+<li>The app talks only to the sidecar and never connects to any model provider directly; provider credentials live only in the sidecar, not on the phone.</li>
+<li>By default the sidecar sends only <strong>text</strong> (your question, file names and paths, statistics) to the provider you configured; original files never leave your network.</li>
+<li>Whether image, document or video content may be sent to the provider is your per-folder choice in the app's AI settings; every transfer is logged and marked in the conversation.</li>
+<li>The provider's own privacy policy governs its handling of that data.</li>
+</ul>
+<p>This data flow is built and controlled by you and does not pass through the developer.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+<li><strong>Network</strong>: to connect to your NAS.</li>
+<li><strong>Camera / Photos and videos</strong>: used only when you choose "take photo" or "upload from gallery", to upload the items you selected to your NAS.</li>
+<li><strong>Biometrics</strong>: optional, to unlock the app locally.</li>
+</ul>
+
+<h2>6. Deleting data</h2>
+<p>"Manage → App settings → Sign out" clears the local session, certificate fingerprints and caches; uninstalling removes all local data. The developer holds no data of yours to delete.</p>
+
+<h2>7. Children</h2>
+<p>NasPilot is intended for adult NAS owners, is not directed at children under 13, and collects no personal information from anyone.</p>
+
+<h2>8. Changes and contact</h2>
+<p>Changes will be posted on this page with a new effective date. Questions: <a href="https://github.com/UserName-Haha/naspilot-site/issues">GitHub Issues</a>.</p>
+<p class="meta">NasPilot is an independent third-party client and is not affiliated with or endorsed by Synology Inc. Synology and DSM are trademarks of Synology Inc.</p>
+</section>
+</main>
+</body>
+</html>
